@@ -30,7 +30,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 96px;
+    scroll-padding-top: 124px;
 }
 
 body {
@@ -78,7 +78,7 @@ a {
 }
 
 .header-content {
-    min-height: 92px;
+    min-height: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,16 +88,17 @@ a {
 .brand {
     display: inline-flex;
     align-items: center;
-    gap: 14px;
+    gap: 18px;
     flex-shrink: 0;
 }
 
 .logo {
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 0 28px rgba(255, 106, 0, 0.18);
+    box-shadow: 0 0 36px rgba(255, 106, 0, 0.22);
 }
 
 .brand-text {
@@ -108,16 +109,18 @@ a {
 
 .brand-text strong {
     color: var(--color-white);
-    font-size: 1rem;
+    font-size: 1.28rem;
     font-weight: 800;
+    line-height: 1.1;
     letter-spacing: -0.02em;
 }
 
 .brand-text small {
     color: var(--color-text-soft);
-    font-size: 0.68rem;
+    font-size: 0.76rem;
     font-weight: 600;
-    letter-spacing: 0.09em;
+    line-height: 1.35;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
@@ -1450,13 +1453,22 @@ a {
 }
 
 @media (max-width: 800px) {
+    html {
+        scroll-padding-top: 98px;
+    }
+
     .header-content {
-        min-height: 78px;
+        min-height: 94px;
+    }
+
+    .brand {
+        gap: 12px;
     }
 
     .logo {
-        width: 56px;
-        height: 56px;
+        width: 72px;
+        height: 72px;
+        box-shadow: 0 0 30px rgba(255, 106, 0, 0.2);
     }
 
     .main-navigation {
@@ -1508,18 +1520,23 @@ a {
 }
 
 @media (max-width: 620px) {
+    html {
+        scroll-padding-top: 88px;
+    }
+
     .container {
         width: min(100% - 30px, var(--container-width));
     }
 
     .header-content {
-        min-height: 72px;
-        gap: 14px;
+        min-height: 84px;
+        gap: 12px;
     }
 
     .logo {
-        width: 50px;
-        height: 50px;
+        width: 64px;
+        height: 64px;
+        box-shadow: 0 0 26px rgba(255, 106, 0, 0.18);
     }
 
     .header-cta {
